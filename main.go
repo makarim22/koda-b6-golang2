@@ -37,6 +37,20 @@ type first []int
 
 type second []int
 
+type is struct{
+	is string
+}
+type fruit struct{
+	fruit is
+}
+
+type favorite struct{
+	favorite []fruit
+}
+
+type my struct{
+	my []favorite
+}
 
 func main () {
   Hello := Hello{
@@ -55,6 +69,21 @@ func main () {
 		First: first{16,16,20,20,},
 		Second: second{16,15,16,10,},
 	}
+
+	slice()
+
+	// my := my{
+	// 	favorite{
+	// 		favorite: []fruit{
+	// 			{},
+	// 		{},
+	// 		{},
+	// 		// fruit: is{
+	// 			is:"Apple",
+	// 		},			
+	// 	},
+	// },
+	// }   
 
   fmt.Println(Hello.World)
 
