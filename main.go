@@ -3,21 +3,21 @@ import "fmt"
 
 
 
-type World struct{
-	Message string
-}
+// type World struct{
+// 	Message string
+// }
 
 type Hello struct{
-	World World
+	World string
 }
 
 
-type best struct{
-	Message string
-}
+// type best struct{
+// 	Message string
+// }
 
 type the struct{
-	best best
+	best string
 }
 
 type are struct{
@@ -29,24 +29,25 @@ type we struct{
 }
 
 
-func main (){
-  myObj := Hello{
-	World: World{
-		Message: "Hello World",
-	},
+func main () {
+  Hello := Hello{
+	World:  "Hello World",
   }
 
-  myobj2 := we{
+  we := we{
 	are: are{
 		the: the{
-			best: best{
-				Message: "koda",
+			best: "koda",
 			},
 		},
-	},
-  }
+	}
 
-  fmt.Println(myObj.World.Message)
+  fmt.Println(Hello.World)
 
-  fmt.Println(myobj2.are.the.best.Message)
+  fmt.Println(we.are.the.best)
 }
+
+
+ 
+
+
