@@ -5,8 +5,6 @@ import "fmt"
 var scores = []int{50, 75, 66, 20, 32, 90}
 
 
-
-
 func slice(){
 newValue := 88
 index := 3
